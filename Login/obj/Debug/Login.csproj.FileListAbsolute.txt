@@ -1,0 +1,17 @@
+D:\WPF\Login\Login\bin\Debug\Login.exe.config
+D:\WPF\Login\Login\bin\Debug\Login.exe
+D:\WPF\Login\Login\bin\Debug\Login.pdb
+D:\WPF\Login\Login\obj\Debug\Login.csprojAssemblyReference.cache
+D:\WPF\Login\Login\obj\Debug\MainWindow.g.cs
+D:\WPF\Login\Login\obj\Debug\App.g.cs
+D:\WPF\Login\Login\obj\Debug\Login_MarkupCompile.cache
+D:\WPF\Login\Login\obj\Debug\Login_MarkupCompile.lref
+D:\WPF\Login\Login\obj\Debug\MainWindow.baml
+D:\WPF\Login\Login\obj\Debug\Login.g.resources
+D:\WPF\Login\Login\obj\Debug\Login.Properties.Resources.resources
+D:\WPF\Login\Login\obj\Debug\Login.csproj.GenerateResource.cache
+D:\WPF\Login\Login\obj\Debug\Login.csproj.CoreCompileInputs.cache
+D:\WPF\Login\Login\obj\Debug\Login.exe
+D:\WPF\Login\Login\obj\Debug\Login.pdb
+D:\WPF\Login\Login\obj\Debug\EnglishWindow.g.cs
+D:\WPF\Login\Login\obj\Debug\EnglishWindow.baml
