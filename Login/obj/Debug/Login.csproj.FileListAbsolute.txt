@@ -13,5 +13,7 @@ D:\WPF\Login\Login\obj\Debug\Login.csproj.GenerateResource.cache
 D:\WPF\Login\Login\obj\Debug\Login.csproj.CoreCompileInputs.cache
 D:\WPF\Login\Login\obj\Debug\Login.exe
 D:\WPF\Login\Login\obj\Debug\Login.pdb
-D:\WPF\Login\Login\obj\Debug\EnglishWindow.g.cs
-D:\WPF\Login\Login\obj\Debug\EnglishWindow.baml
+D:\WPF\Login\Login\obj\Debug\Conseguido.g.cs
+D:\WPF\Login\Login\obj\Debug\Calculadora.g.cs
+D:\WPF\Login\Login\obj\Debug\Conseguido.baml
+D:\WPF\Login\Login\obj\Debug\Calculadora.baml

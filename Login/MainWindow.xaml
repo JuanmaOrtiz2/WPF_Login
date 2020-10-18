@@ -15,9 +15,9 @@
         <TextBox Width="120" Margin="339,149,334.6,243" Name="UserText"/>
         <TextBlock HorizontalAlignment="Left" Height="46" Margin="346,195,0,0" TextWrapping="Wrap" Text="Contraseña:" VerticalAlignment="Top" Width="113" FontSize="20" Foreground="Black" FontFamily="Segoe UI" RenderTransformOrigin="0.822,0.348"/>
         <PasswordBox x:Name="PassText" Width="120" Margin="339,228,334.6,164"/>
-        <TextBox Width="120" Margin="339,290,334.6,102"/>
+        <TextBox x:Name="Captcha" Width="120" Margin="339,290,334.6,102"/>
         <TextBlock HorizontalAlignment="Left" Height="28" Margin="263,290,0,0" TextWrapping="Wrap" Text="237*15 =" VerticalAlignment="Top" Width="71" FontSize="16" Foreground="Black" FontFamily="Segoe UI" RenderTransformOrigin="0.269,2.122"/>
-        <Button Margin="478,290,249.6,100" Content="¿Ayuda?"/>
+        <Button x:Name="Ayuda" Margin="478,290,249.6,100" Content="¿Ayuda?" Click="Ayuda_Click"/>
 
 
 
