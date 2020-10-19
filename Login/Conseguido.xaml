@@ -8,10 +8,55 @@
         Title="Conseguido!" Height="450" Width="800">
     <Grid>
         <Border BorderBrush="Black" Background="blue" BorderThickness="1" HorizontalAlignment="Left" Height="145" Margin="0,0,-0.4,0" VerticalAlignment="Top" Width="794"/>
-        <Border BorderBrush="Black"  Background="red" BorderThickness="1" HorizontalAlignment="Left" Height="275" Margin="0,145,-0.4,0" VerticalAlignment="Top" Width="794">
-            <Calendar Margin="1.2,47.2,-1.2,-47.6"/>
-        </Border>
+        <Border BorderBrush="Black"  Background="red" BorderThickness="1" HorizontalAlignment="Left" Height="275" Margin="0,145,-0.4,0" VerticalAlignment="Top" Width="794"/>
         <TextBlock HorizontalAlignment="Left" Height="46" Margin="299,63,0,0" TextWrapping="Wrap" Text="Conseguido!!" VerticalAlignment="Top" Width="193" FontSize="36" Foreground="White" Background="blue" FontFamily="Script MT Bold"/>
+
+        <!-- Grids -->
+        <Grid x:Name="Grid1" Height="80" Width="80" Margin="261,160,452.6,180" Background="White"/>
+        <Grid x:Name="Grid2" Height="80" Width="80" Margin="346,160,367.6,180" Background="White"/>
+        <Grid x:Name="Grid3" Height="80" Width="80" Margin="431,160,282.6,180" Background="White"/>
+        <Grid x:Name="Grid4" Height="80" Width="80" Margin="261,245,452.6,95" Background="White"/>
+        <Grid x:Name="Grid5" Height="80" Width="80" Margin="346,245,367.6,95" Background="White"/>
+        <Grid x:Name="Grid6" Height="80" Width="80" Margin="431,245,282.6,95" Background="White"/>
+        <Grid x:Name="Grid7" Height="80" Width="80" Margin="261,330,452.6,10" Background="White"/>
+        <Grid x:Name="Grid8" Height="80" Width="80" Margin="346,330,367.6,10" Background="White"/>
+        <Grid x:Name="Grid9" Height="80" Width="80" Margin="431,330,282.6,10" Background="White"/>
+
+        <!--Botones-->
+        <Button x:Name="Btn1" Click="Btn1_Click" Content="Button" HorizontalAlignment="Left" Margin="282,187,0,0" VerticalAlignment="Top" Width="42" Height="17"/>
+        <Button x:Name="Btn2" Click="Btn2_Click" Content="Button" HorizontalAlignment="Left" Margin="364,187,0,0" VerticalAlignment="Top" Width="42" Height="17"/>
+        <Button x:Name="Btn3" Click="Btn3_Click" Content="Button" HorizontalAlignment="Left" Margin="450,187,0,0" VerticalAlignment="Top" Width="42" Height="17"/>
+        <Button x:Name="Btn4" Click="Btn4_Click" Content="Button" HorizontalAlignment="Left" Margin="282,268,0,0" VerticalAlignment="Top" Width="42" Height="17"/>
+        <Button x:Name="Btn5" Click="Btn5_Click" Content="Button" HorizontalAlignment="Left" Margin="364,268,0,0" VerticalAlignment="Top" Width="42" Height="17"/>
+        <Button x:Name="Btn6" Click="Btn6_Click" Content="Button" HorizontalAlignment="Left" Margin="450,268,0,0" VerticalAlignment="Top" Width="42" Height="17"/>
+        <Button x:Name="Btn7" Click="Btn7_Click" Content="Button" HorizontalAlignment="Left" Margin="282,358,0,0" VerticalAlignment="Top" Width="42" Height="17"/>
+        <Button x:Name="Btn8" Click="Btn8_Click" Content="Button" HorizontalAlignment="Left" Margin="364,358,0,0" VerticalAlignment="Top" Width="42" Height="17"/>
+        <Button x:Name="Btn9" Click="Btn9_Click" Content="Button" HorizontalAlignment="Left" Margin="450,358,0,0" VerticalAlignment="Top" Width="42" Height="17"/>
+        <Button x:Name="BtnReset" Click="BtnReset_Click" Content="Reset" HorizontalAlignment="Left" Margin="579,268,0,0" VerticalAlignment="Top" Width="75" Visibility="Hidden"/>
+
+
+        <!--Equis-->
+        <Image x:Name="equis1" Source="D:\WPF\Login\Login\x.jpg" Height="75" Width="75" Margin="261,160,452.6,180" RenderTransformOrigin="0.442,0.192" Visibility="Hidden"/>
+        <Image x:Name="equis2" Source="D:\WPF\Login\Login\x.jpg" Height="75" Width="75" Margin="346,160,367.6,180" RenderTransformOrigin="0.442,0.192" Visibility="Hidden"/>
+        <Image x:Name="equis3" Source="D:\WPF\Login\Login\x.jpg" Height="75" Width="75" Margin="431,160,282.6,180" RenderTransformOrigin="0.442,0.192" Visibility="Hidden"/>
+        <Image x:Name="equis4" Source="D:\WPF\Login\Login\x.jpg" Height="75" Width="75" Margin="261,245,452.6,95" RenderTransformOrigin="0.442,0.192" Visibility="Hidden"/>
+        <Image x:Name="equis5" Source="D:\WPF\Login\Login\x.jpg" Height="75" Width="75" Margin="346,245,367.6,95" RenderTransformOrigin="0.442,0.192" Visibility="Hidden"/>
+        <Image x:Name="equis6" Source="D:\WPF\Login\Login\x.jpg" Height="75" Width="75" Margin="431,245,282.6,95" RenderTransformOrigin="0.442,0.192" Visibility="Hidden"/>
+        <Image x:Name="equis7" Source="D:\WPF\Login\Login\x.jpg" Height="75" Width="75" Margin="261,330,452.6,10" RenderTransformOrigin="0.442,0.192" Visibility="Hidden"/>
+        <Image x:Name="equis8" Source="D:\WPF\Login\Login\x.jpg" Height="75" Width="75" Margin="346,330,367.6,10" RenderTransformOrigin="0.442,0.192" Visibility="Hidden"/>
+        <Image x:Name="equis9" Source="D:\WPF\Login\Login\x.jpg" Height="75" Width="75" Margin="431,330,282.6,10" RenderTransformOrigin="0.442,0.192" Visibility="Hidden"/>
+
+        <!--Circulos-->
+        <Image x:Name="circ1" Source="D:\WPF\Login\Login\o.png" Height="70" Width="70" Margin="261,160,452.6,180" RenderTransformOrigin="0.442,0.192" Visibility="Hidden"/>
+        <Image x:Name="circ2" Source="D:\WPF\Login\Login\o.png" Height="80" Width="80" Margin="346,160,367.6,180" RenderTransformOrigin="0.442,0.192" Visibility="Hidden"/>
+        <Image x:Name="circ3" Source="D:\WPF\Login\Login\o.png" Height="80" Width="80" Margin="431,160,282.6,180" RenderTransformOrigin="0.442,0.192" Visibility="Hidden"/>
+        <Image x:Name="circ4" Source="D:\WPF\Login\Login\o.png" Height="80" Width="80" Margin="261,245,452.6,95" RenderTransformOrigin="0.442,0.192" Visibility="Hidden"/>
+        <Image x:Name="circ5" Source="D:\WPF\Login\Login\o.png" Height="80" Width="80" Margin="346,245,367.6,95" RenderTransformOrigin="0.442,0.192" Visibility="Hidden"/>
+        <Image x:Name="circ6" Source="D:\WPF\Login\Login\o.png" Height="80" Width="80" Margin="431,245,282.6,95" RenderTransformOrigin="0.442,0.192" Visibility="Hidden"/>
+        <Image x:Name="circ7" Source="D:\WPF\Login\Login\o.png" Height="80" Width="80" Margin="261,330,452.6,10" RenderTransformOrigin="0.442,0.192" Visibility="Hidden"/>
+        <Image x:Name="circ8" Source="D:\WPF\Login\Login\o.png" Height="80" Width="80" Margin="346,330,367.6,10" RenderTransformOrigin="0.442,0.192" Visibility="Hidden"/>
+        <Image x:Name="circ9" Source="D:\WPF\Login\Login\o.png" Height="80" Width="80" Margin="431,330,282.6,10" RenderTransformOrigin="0.442,0.192" Visibility="Hidden"/>
+        
 
     </Grid>
 </Window>
