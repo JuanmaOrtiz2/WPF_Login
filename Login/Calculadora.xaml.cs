@@ -32,6 +32,7 @@ namespace Login
             InitializeComponent();
         }
 
+        //Dependiendo si es el primer numero que se inserta o se hace mas grande, usaremos un acumulativo que multiplica por 10 lo que tengamos.
         private void incrementarAcumulativo()
         {
             if (acumulativo == 0)
@@ -41,6 +42,8 @@ namespace Login
         }
 
         //Botones numéricos
+
+        //Los botones hacen lo mismo, si ya se ha pulsado la operación, incrementamos operando2, si no, operando 1
 
         private void Btn_1_Click(object sender, RoutedEventArgs e)
         {
@@ -367,6 +370,9 @@ namespace Login
 
         //Botones de operaciones
 
+        //Se controla que solo sea una operación con dos operandos
+        //Se guarda la operación marcada para cuando el botón igual sea pulsado.
+
         private void Btn_mas_Click(object sender, RoutedEventArgs e)
         {
             if(operandoPulsado)
@@ -451,9 +457,11 @@ namespace Login
 
             }
             Resultado.Text = "";
-            Resultado.Text = total1.ToString();
+            Resultado.Text = total1.ToString(); //Convertimos el resultado en cadena para mostrarlo por pantalla.
         }
 
+
+        //Reset a la calculadora para empezar de nuevo.
         private void Btn_borrar_Click(object sender, RoutedEventArgs e)
         {
             Resultado.Text = "";

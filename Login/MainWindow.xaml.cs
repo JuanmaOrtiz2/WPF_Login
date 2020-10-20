@@ -30,13 +30,14 @@ namespace Login
             
         }
 
+        //Comprobación de datos para entrar a la aplicación.
         private void BtnEntrar_Click(object sender, RoutedEventArgs e)
         {
             usuario = UserText.Text;
             password = PassText.Password;
             captcha = Captcha.Text;
             if (usuario == "") MessageBox.Show("Falta el usuario");
-            else if (password == "") MessageBox.Show("Falta la contraseña");
+            else if (password == "") MessageBox.Show("Falta la contraseña"); //Aviso de campos vacíos.
             else if (captcha == "") MessageBox.Show("Falta resolver la operación");
             else
             {
@@ -44,7 +45,7 @@ namespace Login
                 {
                     Window1 ventana = new Window1();
                     ventana.Owner = this;
-                    ventana.ShowDialog();
+                    ventana.ShowDialog(); //Pasamos a la ventana de la aplicación
                 }
                 else
                 {
@@ -56,11 +57,12 @@ namespace Login
 
         }
 
+
         private void Ayuda_Click(object sender, RoutedEventArgs e)
         {
             Window2 ventana = new Window2();
             ventana.Owner = this;
-            ventana.Show();
+            ventana.Show(); //Abrimos ventana modal
             
 
         }

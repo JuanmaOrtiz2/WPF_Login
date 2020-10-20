@@ -7,16 +7,22 @@
         mc:Ignorable="d"
         Title="Control de Acceso" Height="450" Width="800">
     <Grid>
+        <!-- Bienvenido -->
         <Border BorderBrush="green" Background="green" BorderThickness="1" HorizontalAlignment="Left" Height="97" Margin="0,0,-0.4,0" VerticalAlignment="Top" Width="794"/>
         <TextBlock HorizontalAlignment="Left" Height="46" Margin="322,22,0,0" TextWrapping="Wrap" Text="Bienvenido" VerticalAlignment="Top" Width="167" FontSize="36" Foreground="White" Background="green" FontFamily="Script MT Bold"/>
+        <!--Control usuarios-->
         <Border BorderBrush="green" Background="#FF14F614" BorderThickness="1" HorizontalAlignment="Left" Height="323" Margin="0,97,-0.4,0" VerticalAlignment="Top" Width="794"/>
         <Button x:Name="BtnEntrar" Content="Entrar" Margin="359,358,348.6,24" Click="BtnEntrar_Click"/>
+        <!--Usuario-->
         <TextBlock HorizontalAlignment="Left" Height="46" Margin="359,116,0,0" TextWrapping="Wrap" Text="Usuario:" VerticalAlignment="Top" Width="73" FontSize="20" Foreground="Black" FontFamily="Segoe UI" RenderTransformOrigin="0.822,0.348"/>
         <TextBox Width="120" Margin="339,149,334.6,243" Name="UserText"/>
+        <!--Password-->
         <TextBlock HorizontalAlignment="Left" Height="46" Margin="346,195,0,0" TextWrapping="Wrap" Text="Contraseña:" VerticalAlignment="Top" Width="113" FontSize="20" Foreground="Black" FontFamily="Segoe UI" RenderTransformOrigin="0.822,0.348"/>
         <PasswordBox x:Name="PassText" Width="120" Margin="339,228,334.6,164"/>
+        <!--Captcha-->
         <TextBox x:Name="Captcha" Width="120" Margin="339,290,334.6,102"/>
         <TextBlock HorizontalAlignment="Left" Height="28" Margin="263,290,0,0" TextWrapping="Wrap" Text="237*15 =" VerticalAlignment="Top" Width="71" FontSize="16" Foreground="Black" FontFamily="Segoe UI" RenderTransformOrigin="0.269,2.122"/>
+        <!--Entrar-->
         <Button x:Name="Ayuda" Margin="478,290,249.6,100" Content="¿Ayuda?" Click="Ayuda_Click"/>
 
 

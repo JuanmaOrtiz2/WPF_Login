@@ -33,7 +33,7 @@ namespace Login
             InitializeComponent();
         }
 
-        //Despues de cada ficha se evalua si esa ficha es un movimiento ganador
+        //Despues de cada ficha se evalúa si esa ficha es un movimiento ganador
         private bool condicionVictoria(int a, int b, int jugador)
         {
             bool ganador = false;
@@ -56,7 +56,6 @@ namespace Login
                 if (ocupadas[a + 1, b] == jugador && ocupadas[a + 2, b] == jugador)
                 {
                     ganador = true;
-                    MessageBox.Show("Aqui 2");
                 }
 
             }
@@ -65,7 +64,6 @@ namespace Login
                 if (ocupadas[a, b - 1] == jugador && ocupadas[a, b - 2] == jugador)
                 {
                     ganador = true;
-                    MessageBox.Show("Aqui 3");
                 }
                 if (a == 0)
                 {
@@ -87,7 +85,6 @@ namespace Login
                 if (ocupadas[a - 1, b] == jugador && ocupadas[a - 2, b] == jugador)
                 {
                     ganador = true;
-                    MessageBox.Show("Aqui 4");
                 }
                 if(b==0)
                 {
@@ -102,7 +99,6 @@ namespace Login
                 if (ocupadas[a, b - 1] == jugador && ocupadas[a, b + 1] == jugador || ocupadas[a - 1, b] == jugador && ocupadas[a + 1, b] == jugador)
                 {
                     ganador = true;
-                    MessageBox.Show("Aqui 5");
                 }
                 if(ocupadas[a-1,b-1] == jugador && ocupadas[a+1,b+1] == jugador || ocupadas[a-1,b+1] == jugador && ocupadas[a+1,b-1]==jugador )
                 {
@@ -113,7 +109,7 @@ namespace Login
         }
 
 
-        // Movimiento del oponente
+        // Movimiento del oponente.
         private void Oponente()
         {
             int a = 0;
@@ -121,12 +117,12 @@ namespace Login
             bool colocada = false;
             int contador = 1;
             if (piezasTotales == 9) {
-                colocada = true;
-                BtnReset.Visibility = Visibility.Visible;
+                colocada = true; //Si están todas colocadas, se empieza de nuevo.
+                Reset();
             } 
             while(!colocada)
             {
-                if(ocupadas[a,b] == 0)
+                if(ocupadas[a,b] == 0) //La táctica de la máquina es colocar siempre en el primer hueco libre.
                 {
                     colocada = true;
                     ocupadas[a, b] = 2;
@@ -165,8 +161,8 @@ namespace Login
                     bool campeon = condicionVictoria(a, b,2);
                     if(campeon)
                     {
-                        MessageBox.Show("La maquina ha ganado");
-                        BtnReset.Visibility = Visibility.Visible;
+                        MessageBox.Show("La maquina ha ganado"); //Se comprueba si el movimiento es ganador y si es, se muestra.
+                        Reset();
                     }
                 }
                 contador++;
@@ -183,7 +179,7 @@ namespace Login
         }
 
         
-
+        //Botones de los jugadores, se muestra ficha de jugador y se comprueba si es movimiento ganador, si no, damos paso a la máquina.
         private void Btn1_Click(object sender, RoutedEventArgs e)
         {
             equis1.Visibility = Visibility.Visible;
@@ -194,9 +190,13 @@ namespace Login
             if (campeon)
             {
                 MessageBox.Show("Has ganado!");
-                BtnReset.Visibility = Visibility.Visible;
+                Reset();
             }
-            Oponente();
+            else
+            {
+                Oponente();
+            }
+            
             
 
 
@@ -212,10 +212,13 @@ namespace Login
             if (campeon)
             {
                 MessageBox.Show("Has ganado!");
-                BtnReset.Visibility = Visibility.Visible;
+                Reset();
             }
-            Oponente();
-            
+            else
+            {
+                Oponente();
+            }
+
         }
 
         private void Btn3_Click(object sender, RoutedEventArgs e)
@@ -228,10 +231,13 @@ namespace Login
             if (campeon)
             {
                 MessageBox.Show("Has ganado!");
-                BtnReset.Visibility = Visibility.Visible;
+                Reset();
             }
-            Oponente();
-            
+            else
+            {
+                Oponente();
+            }
+
         }
 
         private void Btn4_Click(object sender, RoutedEventArgs e)
@@ -244,10 +250,13 @@ namespace Login
             if (campeon)
             {
                 MessageBox.Show("Has ganado!");
-                BtnReset.Visibility = Visibility.Visible;
+                Reset();
             }
-            Oponente();
-           
+            else
+            {
+                Oponente();
+            }
+
         }
 
         private void Btn5_Click(object sender, RoutedEventArgs e)
@@ -260,10 +269,13 @@ namespace Login
             if (campeon)
             {
                 MessageBox.Show("Has ganado!");
-                BtnReset.Visibility = Visibility.Visible;
+                Reset();
             }
-            Oponente();
-            
+            else
+            {
+                Oponente();
+            }
+
         }
 
         private void Btn6_Click(object sender, RoutedEventArgs e)
@@ -276,10 +288,13 @@ namespace Login
             if (campeon)
             {
                 MessageBox.Show("Has ganado!");
-                BtnReset.Visibility = Visibility.Visible;
+                Reset();
             }
-            Oponente();
-            
+            else
+            {
+                Oponente();
+            }
+
         }
 
         private void Btn7_Click(object sender, RoutedEventArgs e)
@@ -292,10 +307,13 @@ namespace Login
             if (campeon)
             {
                 MessageBox.Show("Has ganado!");
-                BtnReset.Visibility = Visibility.Visible;
+                Reset();
             }
-            Oponente();
-            
+            else
+            {
+                Oponente();
+            }
+
         }
 
         private void Btn8_Click(object sender, RoutedEventArgs e)
@@ -308,10 +326,13 @@ namespace Login
             if (campeon)
             {
                 MessageBox.Show("Has ganado!");
-                BtnReset.Visibility = Visibility.Visible;
+                Reset();
             }
-            Oponente();
-            
+            else
+            {
+                Oponente();
+            }
+
         }
 
         private void Btn9_Click(object sender, RoutedEventArgs e)
@@ -324,18 +345,22 @@ namespace Login
             if (campeon)
             {
                 MessageBox.Show("Has ganado!");
-                BtnReset.Visibility = Visibility.Visible;
+                Reset();
             }
-            Oponente();
-            
+            else
+            {
+                Oponente();
+            }
+
         }
 
-        private void BtnReset_Click(object sender, RoutedEventArgs e)
+        //Una vez uno de los dos jugadores gana, se reinicia el tablero para una nueva partida.
+        private void Reset()
         {
             piezasTotales = 0;
-            for(int i=0;i<3;i++)
+            for (int i = 0; i < 3; i++)
             {
-                for(int j=0;j<3;j++)
+                for (int j = 0; j < 3; j++)
                 {
                     ocupadas[i, j] = 0;
                 }
@@ -359,8 +384,8 @@ namespace Login
             circ7.Visibility = Visibility.Hidden;
             circ8.Visibility = Visibility.Hidden;
             circ9.Visibility = Visibility.Hidden;
-
-            BtnReset.Visibility = Visibility.Hidden;
         }
+
+       
     }
 }
